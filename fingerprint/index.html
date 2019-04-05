@@ -1,0 +1,37 @@
+<h1 align="center">Biometrics</h1>
+<h2 align="left">Fingerprint</h2>
+<h3 align="left">Tugas 2 - Image Preprosessing</h3>
+<h4 align="justify">Tahapan proccess</h4>
+<ol>
+<li>Procces Gabor Filter menggunakan
+<ol>
+<li><a href="https://github.com/rtshadow/biometrics">https://github.com/rtshadow/biometrics</a></li>
+<li><a href="https://github.com/rtshadow/biometrics">https://github.com/tommythorsen/fingerprintshttps://github.com/rtshadow/biometrics</a></li>
+</ol>
+</li>
+<li>Thining
+<ol>
+<li><a href="https://github.com/linbojin/Skeletonization-by-Zhang-Suen-Thinning-Algorithm">https://github.com/linbojin/Skeletonization-by-Zhang-Suen-Thinning-Algorithm</a>&nbsp;</li>
+</ol>
+</li>
+<li>Poincare &amp; Minutiae Extraction
+<ol>
+<li><a href="https://github.com/pavangannavarapu/Finger-Print-Recognition-Using-Minutiae-Based-Approach">https://github.com/pavangannavarapu/Finger-Print-Recognition-Using-Minutiae-Based-Approach</a>&nbsp;</li>
+</ol>
+</li>
+</ol>
+<p>&nbsp;</p>
+<h4 align="justify">Noted :&nbsp;</h4>
+<ul style="list-style-type: circle;">
+<li>Menggunakan beberapa referensi tools yang berbeda , karena sebagian tools dari&nbsp;<a href="https://github.com/rtshadow/biometrics">https://github.com/rtshadow/biometrics</a>&nbsp;errors</li>
+<li>Mengatasi error gabor.py di repo https://github.com/rtshadow/biometrics</li>
+<li>Edit baris 41 menjadi<strong>&nbsp;im_load[i * W + k, j * W + l] = int(utils.apply_kernel_at(&nbsp;</strong></li>
+<li>dan baris 45 menjadi&nbsp;<strong> j * W + l))</strong></li>
+<li>Disini saya menambahkan juga procces Poincare untuk melihat singular Points dari fingerprint</li>
+</ul>
+<h4 align="justify">Hasil proccess</h4>
+<p align="left">Gambar disini adalah sample dari sidik jari saya sendiri</p>
+<p><img src="https://raw.githubusercontent.com/L200160002/L200160002.github.io/master/fingerprint/preprocessing_final.PNG" alt="Hail sidik jari" width="650" height="240" /></p>
+
+<br>
+<h3> Gambar diatas terlihat kurang rapi, dikarenakan gambar original kurang bagus, dan berbayang, sehingga pada proses gabor ada yang tidak terfilter </h3>
